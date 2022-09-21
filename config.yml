@@ -1,0 +1,23 @@
+headers:
+  MyHeader: MyHeaderValue
+
+metrics:
+  - name: Performance
+    type: object
+    help: Performance of SBO
+    path: '{.coins[*]}'
+    labels:
+      id: '{.id}'
+      name: '{.name}'
+      symbol: '{.symbol}'
+    values:
+      rank: '{.rank}'
+      price: '{.price}'
+      price_as_btc: '{.priceBtc}'
+      volume: '{.volume}'
+      market_cap: '{.marketCap}'
+      available_supply: '{.availableSupply}'
+      total_supply: '{.totalSupply}'
+      price_change1h: '{.priceChange1h}'
+      price_change1d: '{.priceChange1d}'
+      price_change1w: '{.priceChange1w}'
